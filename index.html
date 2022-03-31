@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/6b7d429c30.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="logo"><img src="images/logo.svg" alt="" /></div>
+        <div class="tip_wrapper">
+          <div class="col col-left">
+            <div class="bill_input_contaier">
+              <label for="bill">Bill</label>
+              <div class="input_wrapper">
+                <div class="icon">
+                  <img src="images/icon-dollar.svg" alt="" />
+                </div>
+
+                <input type="text" id="bill" />
+              </div>
+            </div>
+
+            <div class="select_tip_container">
+              <label>Select Tip %</label>
+              <div class="tip_buttons">
+                <button id="five">5%</button>
+                <button id="ten">10%</button>
+                <button id="fifteen">15%</button>
+                <button id="twenty_five">25%</button>
+                <button id="fifty">50%</button>
+                <input id="custom" type="text" placeholder="Custom" />
+              </div>
+            </div>
+
+            <div class="number_people_contaier">
+              <label for="bill">Number of People</label>
+              <div class="input_wrapper">
+                <div class="icon">
+                  <img src="images/icon-person.svg" alt="" />
+                </div>
+                <input type="text" id="person" />
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="result_wrapper">
+              <div class="row_wrapper">
+                <div class="row tip_amount_pro_person_wrapper">
+                  <div class="tip_result_label">
+                    <p class="result_label">Tip Amount</p>
+                    <p class="result_person">/ person</p>
+                  </div>
+
+                  <div class="tip_result">
+                    <p id="tip_amount">4.27</p>
+                  </div>
+                </div>
+
+                <div class="row total_pro_person_wrapper">
+                  <div class="tip_result_label">
+                    <p class="result_label">Total</p>
+                    <p class="result_person">/ person</p>
+                  </div>
+
+                  <div class="tip_result">
+                    <p id="total">32.79</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reset_button_wrapper">
+                <button class="reset_button">RESET</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
