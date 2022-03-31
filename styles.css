@@ -55,6 +55,7 @@ input {
 .input_wrapper img {
   width: 100%;
 }
+/* !   tip wrapper  */
 
 .tip_wrapper {
   background-color: var(--White);
@@ -70,16 +71,11 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* padding: 2em; */
 }
 
 .col-left {
   padding: 2em;
 }
-
-/* .bill_input_container {
-  margin-bottom: 5em;
-} */
 
 .select_tip_container {
   margin-top: 3em;
@@ -128,11 +124,11 @@ label {
   padding: 0 2em;
 }
 
-/* ------- */
+/*! ---tip_buttons---- */
 
 .tip_buttons {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-top: 1em;
@@ -143,13 +139,12 @@ label {
   text-align: center;
   font-size: 2em;
   font-family: "Space Mono", monospace;
-  /* color:  var() */
+
   border: 2px solid transparent;
   background-color: var(--VeryLightGgrayishCyan);
 }
 
 .tip_buttons input:focus {
-  /* border: 2px solid #58a59c; */
   outline: 2px solid #58a59c;
   border-radius: 5px;
   text-align: right;
@@ -177,7 +172,7 @@ label {
   margin-top: 5em;
 }
 
-/* result_wrapper */
+/*! result_wrapper */
 
 .result_wrapper {
   background-color: var(--VeryDarkCyan);
@@ -226,4 +221,14 @@ label {
 
 .reset_button:hover {
   background-color: #9ee8e0;
+}
+
+@media (max-width: 768px) {
+  .tip_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .tip_buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
