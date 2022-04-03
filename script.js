@@ -51,3 +51,8 @@ document.getElementById("fifty").onclick = function () {
   totalWrite.innerHTML = total.toFixed(2);
   console.log(yuzde50);
 };
+
+
+function resetPage() {
+  window.location.reload();
+}
