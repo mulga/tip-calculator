@@ -23,7 +23,23 @@
                   <img src="images/icon-dollar.svg" alt="" />
                 </div>
 
-                <input type="text" id="bill" value="" />
+                <input
+                  type="text"
+                  id="bill"
+                  value=""
+                  placeholder="0"
+                  inputmode="numeric"
+                />
+              </div>
+            </div>
+
+            <div class="number_people_contaier">
+              <label for="bill">Number of People</label>
+              <div class="input_wrapper">
+                <div class="icon">
+                  <img src="images/icon-person.svg" alt="" />
+                </div>
+                <input type="text" id="person" value="" placeholder="0" />
               </div>
             </div>
 
@@ -36,16 +52,6 @@
                 <button id="twenty_five">25%</button>
                 <button id="fifty">50%</button>
                 <input id="custom" type="text" placeholder="Custom" />
-              </div>
-            </div>
-
-            <div class="number_people_contaier">
-              <label for="bill">Number of People</label>
-              <div class="input_wrapper">
-                <div class="icon">
-                  <img src="images/icon-person.svg" alt="" />
-                </div>
-                <input type="number" id="person" value="1" />
               </div>
             </div>
           </div>
@@ -76,7 +82,9 @@
               </div>
 
               <div class="reset_button_wrapper">
-                <button id="reset" class="reset_button">RESET</button>
+                <button id="reset" class="reset_button" onclick="resetPage()">
+                  RESET
+                </button>
               </div>
             </div>
           </div>
